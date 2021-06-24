@@ -24,14 +24,14 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "ody" ]]
+    if [[ $UPSTREAM_REPO == "NOVEMBER" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL29kaXNobzE5OTcvU0FRVC1VU0VSQk9U" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL29kaXNobzE5OTcvU0FRVC1VU0VSQk9ULkdFVA==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL29kaXNobzE5OTcvU0FRVC1VU0VSQk9U" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL29kaXNobzE5OTcvU0FRVC1VU0VSQk9ULkdFVA==" | base64 -d`
     fi
     echo "$rlink"
 }
