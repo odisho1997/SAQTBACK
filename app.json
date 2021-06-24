@@ -1,0 +1,120 @@
+{
+  "name": "Memo - USERBOT",
+  "description": "Arabic Userbot for you by - @ODYSHO ",
+  "logo": "https://telegra.ph/file/b204d0eade42f0acab4fe.jpg",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/ANL0KE/ICSS-USERBOT/",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "ادخل اسمك هنا",
+      "value": "Memian"
+    },
+    "APP_ID": {
+      "description": "اب ايدي",
+      "value": "6789410"
+    },
+    "API_HASH": {
+      "description": "ايبي هاش",
+      "value": "996af9565de608e1b9d906eaeba94fad"
+    },
+    "STRING_SESSION": {
+      "description": "كود التيرمكس",
+      "value": "1AZWarzwBu6YtCQnSSjq3GZNqzZDV2cRbea_gwDS3YvjfMXC6qsOc4Fw2yFvVmq1fGyjzni6DJpFkYZyrjouHdh0h8-RwkNzX0kTWPOom5mTmL8OZPBZSmT5jJM5pYfY_JLUwka1I0mxP1aWNkCUl65vlL3L11M7xw4VjbNh7PdY2PRZc5Zwf12q7pmEXvHIA9weDW89ZT7c1ySsuva81BDwNtqv3pXM-GlLI3HIpHxfZtTNrVxcjmJOTXzkNQZrdWUxjB1IARbeLKW41BqKX9yD0LdNPy-OAkI3uxxVVx3BXEy8lnln9MopBIRsXBkAF-2T9DT8tYOcRbsR1HA8TliShh2q-mvY="
+    },
+    "ENV": {
+      "description": "لتغير بيها شي",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_USERNAME": {
+      "description": "معرف البوت",
+      "value": "GSEDGEHEGBOT"
+    },
+    "TG_BOT_TOKEN": {
+      "description": " توكن البوت - يجب وضع البوت انلاين مود",
+      "value": "1779390741:AAH1SZLp4TS5tyIsvZIYqEIFMB23Az6V0BQ"
+    },
+    "PMPERMIT_PIC": {
+      "description": "صوره ",
+      "value": "",
+      "required": false
+    },
+    "COMMAND_HAND_LER": {
+      "description": "اتركها كما هيه",
+      "value": ".",
+      "required": false
+    },
+    "MAX_FLOOD_IN_PMS": {
+      "description": "عدد الرسائل ",
+      "value": "6",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "الكروب ",
+      "value": "",
+      "required": false
+    },
+    "CUSTOM_PMPERMIT_TEXT": {
+      "description": " الكليشه الحمايه ",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_BOT_API_ID": {
+      "description": "ايدي الكروب ",
+      "value": "",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "ايدي حسابك",
+      "value": "732221062",
+      "required": false
+    },
+
+    "HEROKU_API_KEY": {
+      "description": "هيروكو ابي كي من الاعدادات عن طريق الرابط https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اسم التطبيق ",
+      "value": "77f4babd-5259-45db-89c4-0fb5e32f9e52",
+      "required": false
+    },
+    "TZ": {
+      "description": "منطقتك ",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "رمز السورس",
+      "value": "ody ",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
